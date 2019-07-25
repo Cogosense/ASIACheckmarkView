@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ASIACheckmark
 
 class ViewController: UIViewController {
 
