@@ -39,17 +39,17 @@ open class ASIACheckmarkView: UIButton {
     
     // MARK: - Public properties
     /// True for checked, false otherwise
-    open var boolValue : Bool {
+    @objc open var boolValue : Bool {
         get { return self.isGood }
         set { self.isGood = newValue }
     }
     /// True for checked, false otherwise
-    open var checked: Bool {
+    @objc open var checked: Bool {
         get { return self.isGood }
         set { self.isGood = newValue }
     }
     /// True if animating spinning, false otherwise
-    open var isAnimating : Bool { return self.animating }
+    @objc open var isAnimating : Bool { return self.animating }
     
     // MARK: - Private properties
     /// Animation end closure completion
@@ -74,7 +74,7 @@ open class ASIACheckmarkView: UIButton {
     /// - Parameters:
     ///   - checked: Animate to state
     ///   - completion: Completion block (fired after new state is determined)
-    open func animate(checked: Bool, withCompletion completion:ASIACompletion? = nil){
+    @objc open func animate(checked: Bool, withCompletion completion:ASIACompletion? = nil){
         animateMarkGood(checked, completion: completion)
     }
     
